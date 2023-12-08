@@ -1,0 +1,36 @@
+<h1>Update Students</h1>
+
+<form action="updaterecord/{{myhome.id}}" method="POST">
+{%csrf_token%}
+First Name:<br>
+<input name="firstname" value="{{myhome.firstname}}">
+<br><br>
+Last Name:<br>
+<input name="lastname" value="{{myhome.lastname}}">
+<br><br>
+Father Name:<br>
+<input name="fathername" value="{{myhome.fathername}}">
+<br><br>
+Mother Name:<br>
+<input name="mothername" value="{{myhome.mothername}}">
+<br><br>
+DOB:<br>
+<input name="dob" value="{{myhome.dob}}">
+<br><br>
+Age:<br>
+<input name="age" value="{{myhome.age}}">
+<br><br>
+Address:<br>
+<input name="address" value="{{myhome.address}}">
+<br><br>
+Father Mobile Number:<br>
+<input name="fathermobilenumber" value="{{myhome.fathermobilenumber}}">
+<br><br>
+Mother Mobile Number:<br>
+<input name="mothermobilenumber" value="{{myhome.mothermobilenumber}}">
+<br><br>
+Gender:<br>
+<input name="gender" value="{{myhome.gender}}">
+<br><br>
+<input type="submit" value="Submit">
+</form>

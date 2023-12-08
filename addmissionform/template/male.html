@@ -1,0 +1,39 @@
+
+<h2>Male Students</h2>
+<table border ="1">
+  <tread>
+    <tr>
+    <td>Sr.No</td>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Father's Name</td>
+    <td>Mother's Name</td>
+    <td>DOB</td>
+    <td>Age</td>
+    <td>Address</td>
+    <td>Father Mobile Number</td>
+    <td>Mother Mobile Number</td>
+    <td>Gender</td>
+    <td>Delete</td>
+    <td>Update</td>
+    </tr>
+    </tread>
+
+  {% for x in myhome %}
+<tr>
+<td>{{x.id}}</td>
+<td>{{x.firstname}}</td>
+<td>{{x.lastname}}</td>
+<td>{{x.fathername}}</td>
+<td>{{x.mothername}}</td>
+<td>{{x.dob}}</td>
+<td>{{x.age}}</td>
+<td>{{x.address}}</td>
+<td>{{x.fathermobilenumber}}</td>
+<td>{{x.mothermobilenumber}}</td>
+<td>{{x.gender}}</td>
+<td><a href="delete/{{x.id}}">Delete</a></td>
+<td><a href="update/{{x.id}}">Update</a></td> 
+</tr>
+{% endfor %}
+</table>
